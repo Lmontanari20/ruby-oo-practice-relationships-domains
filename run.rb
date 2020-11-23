@@ -1,8 +1,4 @@
-require_relative '../config/environment.rb'
-
-def reload
-  load 'config/environment.rb'
-end
+require '/tools/console.rb'  
 
 loc1 = Location.new("mine")
 loc2 = Location.new("yours")
@@ -20,4 +16,4 @@ c5 = Client.new("Mike", t2, loc3)
 c6 = Client.new("Bobby", t3, loc3)
 c7 = Client.new("Bob", t3, loc3)
 
-Pry.start
+binding.pry
